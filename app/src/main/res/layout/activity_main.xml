@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rishi.travelerswatch.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Traveller's Watch"
+        android:textSize="24sp"
+        android:fontFamily=""
+        android:textColor="@color/colorPrimary"
+        android:textColorHighlight="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/latitudeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/titleTv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:text="Latitude"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="?android:attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/latitudeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/latitudeLabel"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="n/A"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/longitudeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/latitudeTv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Longitude :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="?android:attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/longitudeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/longitudeLabel"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="n/A"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:attr/colorPrimary" />
+
+
+
+    <TextView
+        android:id="@+id/accuracyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="Accuracy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="?android:attr/colorPrimary"
+        android:layout_alignTop="@id/latitudeLabel"
+        android:layout_toRightOf="@id/latitudeTv" />
+
+    <TextView
+        android:id="@+id/accuracyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/accuracyLabel"
+        android:layout_below="@id/accuracyLabel"
+        android:layout_marginTop="5dp"
+        android:text="n/A"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/altitudeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altitude :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="?android:attr/colorPrimary"
+        android:layout_toRightOf="@id/longitudeTv"
+        android:layout_alignTop="@id/longitudeLabel"
+        android:layout_alignLeft="@id/accuracyTv"
+        />
+
+
+    <TextView
+        android:id="@+id/altitudeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n/A"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:attr/colorPrimary"
+        android:layout_toRightOf="@id/longitudeTv"
+        android:layout_alignTop="@id/longitudeTv"
+        android:layout_alignLeft="@id/accuracyTv"
+         />
+
+    <TextView
+        android:id="@+id/addressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/longitudeTv"
+        android:layout_alignLeft="@id/longitudeTv"
+        android:text="Address :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="?android:attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/addressTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/addressLabel"
+        android:layout_alignLeft="@id/addressLabel"
+        android:text="n/A"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:attr/colorPrimary" />
+
+    <Button
+        android:id="@+id/navigateBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#000000"
+        android:text="show in google Map"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="70dp" />
+
+
+</RelativeLayout>
